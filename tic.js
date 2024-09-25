@@ -27,7 +27,7 @@ let i = 1;
                 (grid[2].innerText === "X" && grid[5].innerText === "X" && grid[8].innerText === "X") ||
                 (grid[0].innerText === "X" && grid[4].innerText === "X" && grid[8].innerText === "X") ||
                 (grid[2].innerText === "X" && grid[4].innerText === "X" && grid[6].innerText === "X")) {
-                setTimeout(() => { alert("Player 1 wins!"); resetGame(); }, 200);
+                setTimeout(() => { alert("Player 2 wins!"); resetGame(); }, 200);
 
 
             } else if (
@@ -39,7 +39,7 @@ let i = 1;
                 (grid[2].innerText === "O" && grid[5].innerText === "O" && grid[8].innerText === "O") ||
                 (grid[0].innerText === "O" && grid[4].innerText === "O" && grid[8].innerText === "O") ||
                 (grid[2].innerText === "O" && grid[4].innerText === "O" && grid[6].innerText === "O")) {
-                setTimeout(() => { alert("Player 2 wins!"); resetGame(); }, 200);
+                setTimeout(() => { alert("Player 1 wins!"); resetGame(); }, 200);
             } else if (i > 9) {
                 setTimeout(() => { alert("It's a tie!"); resetGame(); }, 200);
             }
