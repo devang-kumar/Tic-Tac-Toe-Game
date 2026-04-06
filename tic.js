@@ -52,3 +52,72 @@ let i = 1;
             i = 1;
             child.innerText = "Player 1's move";
         }
+
+//typescript::::---->>>>>>>
+// let i: number = 1;
+
+// const grid = document.getElementsByClassName('grid-item') as HTMLCollectionOf<HTMLElement>;
+// const child = document.getElementsByClassName("child")[0] as HTMLElement;
+
+// function append(index: number): void {
+//     if (grid[index].innerText === "") {
+//         if (i % 2 === 0) {
+//             grid[index].innerText = "X";
+//             child.innerText = "Player 1's move";
+//         } else {
+//             grid[index].innerText = "O";
+//             child.innerText = "Player 2's move";
+//         }
+//         i++;
+//     } else {
+//         alert("This spot is already taken!");
+//     }
+//     check();
+// }
+
+// function check(): void {
+//     if (
+//         (grid[0].innerText === "X" && grid[1].innerText === "X" && grid[2].innerText === "X") ||
+//         (grid[3].innerText === "X" && grid[4].innerText === "X" && grid[5].innerText === "X") ||
+//         (grid[6].innerText === "X" && grid[7].innerText === "X" && grid[8].innerText === "X") ||
+//         (grid[0].innerText === "X" && grid[3].innerText === "X" && grid[6].innerText === "X") ||
+//         (grid[1].innerText === "X" && grid[4].innerText === "X" && grid[7].innerText === "X") ||
+//         (grid[2].innerText === "X" && grid[5].innerText === "X" && grid[8].innerText === "X") ||
+//         (grid[0].innerText === "X" && grid[4].innerText === "X" && grid[8].innerText === "X") ||
+//         (grid[2].innerText === "X" && grid[4].innerText === "X" && grid[6].innerText === "X")
+//     ) {
+//         setTimeout(() => {
+//             alert("Player 2 wins!");
+//             resetGame();
+//         }, 200);
+
+//     } else if (
+//         (grid[0].innerText === "O" && grid[1].innerText === "O" && grid[2].innerText === "O") ||
+//         (grid[3].innerText === "O" && grid[4].innerText === "O" && grid[5].innerText === "O") ||
+//         (grid[6].innerText === "O" && grid[7].innerText === "O" && grid[8].innerText === "O") ||
+//         (grid[0].innerText === "O" && grid[3].innerText === "O" && grid[6].innerText === "O") ||
+//         (grid[1].innerText === "O" && grid[4].innerText === "O" && grid[7].innerText === "O") ||
+//         (grid[2].innerText === "O" && grid[5].innerText === "O" && grid[8].innerText === "O") ||
+//         (grid[0].innerText === "O" && grid[4].innerText === "O" && grid[8].innerText === "O") ||
+//         (grid[2].innerText === "O" && grid[4].innerText === "O" && grid[6].innerText === "O")
+//     ) {
+//         setTimeout(() => {
+//             alert("Player 1 wins!");
+//             resetGame();
+//         }, 200);
+
+//     } else if (i > 9) {
+//         setTimeout(() => {
+//             alert("It's a tie!");
+//             resetGame();
+//         }, 200);
+//     }
+// }
+
+// function resetGame(): void {
+//     for (let j = 0; j < grid.length; j++) {
+//         grid[j].innerText = "";
+//     }
+//     i = 1;
+//     child.innerText = "Player 1's move";
+// }
